@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable Generator</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .auth-container, .dashboard {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: #1a73e8;
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #555;
+        }
+        input, select, button {
+            padding: 12px;
+            width: 100%;
+            max-width: 350px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        input:focus, select:focus {
+            border-color: #1a73e8;
+            outline: none;
+        }
+        button {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #1557b0;
+        }
+        .toggle-link {
+            color: #1a73e8;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .toggle-link:hover {
+            text-decoration: underline;
+        }
+        .dashboard {
+            position: relative;
+        }
+        .dashboard-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .dashboard-header button {
+            max-width: 150px;
+        }
+        .teacher-controls {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .teacher-controls button {
+            max-width: 200px;
+        }
+        .timetable-list {
+            margin-bottom: 30px;
+        }
+        .timetable-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            transition: background 0.3s ease;
+        }
+        .timetable-item:hover {
+            background: #e9ecef;
+        }
+        .timetable-item span {
+            font-size: 1.1rem;
+            color: #444;
+        }
+        .timetable-item-actions {
+            display: flex;
+            gap: 10px;
+        }
+        .timetable-item-actions button {
+            max-width: 100px;
+            padding: 8px;
+            font-size: 0.9rem;
+        }
+        .delete-btn {
+            background-color: #dc3545;
+        }
+        .delete-btn:hover {
+            background-color: #c82333;
+        }
+        .timetable-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        .timetable-table th, .timetable-table td {
+            border: 1px solid #e0e0e0;
+            padding: 12px;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+        .timetable-table th {
+            background-color: #1a73e8;
+            color: white;
+            font-weight: 600;
+        }
+        .timetable-table td {
+            background: #fff;
+        }
+        .timetable-table td small {
+            display: block;
+            color: #777;
+            font-size: 0.85rem;
+            margin-top: 5px;
+        }
+        .subject-form {
+            margin-top: 20px;
+            display: none;
+        }
+        .subject-form.active {
+            display: block;
+        }
+        .subject-row {
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .subject-row button {
+            background-color: #dc3545;
+            max-width: 100px;
+            margin-top: 10px;
+        }
+        .subject-row button:hover {
+            background-color: #c82333;
+        }
+        .message {
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 6px;
+            font-size: 0.95rem;
+        }
+        .message.success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .message.error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .no-timetables {
+            color: #666;
+            font-style: italic;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Auth Section -->
+        <div id="authContainer" class="auth-container">
+            <h1 id="authTitle">Login</h1>
+            <form id="authForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="form-group" id="roleGroup" style="display: none;">
+                    <label for="role">Role</label>
+                    <select id="role">
+                        <option value="teacher">Teacher</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <p><a class="toggle-link" id="toggleAuth">Register instead</a></p>
+            <div id="authMessage"></div>
+        </div>
+
+        <!-- Dashboard Section -->
+        <div id="dashboard" class="dashboard" style="display: none;">
+            <div class="dashboard-header">
+                <h1>Welcome, <span id="welcomeUsername"></span>!</h1>
+                <button id="logoutBtn">Logout</button>
+            </div>
+            <div id="teacherControls" class="teacher-controls" style="display: none;">
+                <button id="generateBtn">Generate New Timetable</button>
+                <button id="addSubjectsBtn">Add Subjects</button>
+            </div>
+            <div id="subjectForm" class="subject-form">
+                <h2>Add Subjects</h2>
+                <form id="subjectsForm">
+                    <div id="subjectsContainer">
+                        <div class="form-group subject-row">
+                            <label for="subjectName0">Subject Name</label>
+                            <input type="text" id="subjectName0" required>
+                            <label for="teacherName0">Teacher Name</label>
+                            <input type="text" id="teacherName0" required>
+                            <label for="maxSlots0">Max Daily Slots</label>
+                            <input type="number" id="maxSlots0" min="1" max="5" value="2">
+                            <label for="rooms0">Preferred Rooms (comma-separated)</label>
+                            <input type="text" id="rooms0" placeholder="e.g., Room A, Room B">
+                            <button type="button" onclick="removeSubjectRow(this)">Remove</button>
+                        </div>
+                    </div>
+                    <button type="button" id="addSubjectRowBtn">Add Another Subject</button>
+                    <button type="submit">Save Subjects</button>
+                </form>
+                <div id="subjectsMessage"></div>
+            </div>
+            <div id="timetableList" class="timetable-list"></div>
+            <div id="timetableDisplay"></div>
+            <div id="dashboardMessage"></div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE_URL = 'http://localhost:5000/api';
+        let token = localStorage.getItem('token');
+        let user = JSON.parse(localStorage.getItem('user')) || null;
+        let isLogin = true;
+
+        // DOM Elements
+        const authContainer = document.getElementById('authContainer');
+        const dashboard = document.getElementById('dashboard');
+        const authForm = document.getElementById('authForm');
+        const authTitle = document.getElementById('authTitle');
+        const roleGroup = document.getElementById('roleGroup');
+        const toggleAuth = document.getElementById('toggleAuth');
+        const authMessage = document.getElementById('authMessage');
+        const welcomeUsername = document.getElementById('welcomeUsername');
+        const teacherControls = document.getElementById('teacherControls');
+        const generateBtn = document.getElementById('generateBtn');
+        const addSubjectsBtn = document.getElementById('addSubjectsBtn');
+        const subjectForm = document.getElementById('subjectForm');
+        const subjectsForm = document.getElementById('subjectsForm');
+        const subjectsContainer = document.getElementById('subjectsContainer');
+        const addSubjectRowBtn = document.getElementById('addSubjectRowBtn');
+        const subjectsMessage = document.getElementById('subjectsMessage');
+        const logoutBtn = document.getElementById('logoutBtn');
+        const timetableList = document.getElementById('timetableList');
+        const timetableDisplay = document.getElementById('timetableDisplay');
+        const dashboardMessage = document.getElementById('dashboardMessage');
+
+        // API Request Helper
+        async function apiRequest(endpoint, method = 'GET', data = null) {
+            const headers = {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
+            };
+            const response = await fetch(`${API_BASE_URL}${endpoint}`, {
+                method,
+                headers,
+                body: data ? JSON.stringify(data) : null
+            });
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(errorData.message || 'Request failed');
+            }
+            return response.json();
+        }
+
+        // UI Helpers
+        function showMessage(element, text, isError = false) {
+            element.innerHTML = `<div class="message ${isError ? 'error' : 'success'}">${text}</div>`;
+            setTimeout(() => element.innerHTML = '', 3000);
+        }
+
+        function showDashboard() {
+            authContainer.style.display = 'none';
+            dashboard.style.display = 'block';
+            welcomeUsername.textContent = user.username;
+            if (user.role === 'teacher' || user.role === 'admin') {
+                teacherControls.style.display = 'flex';
+            } else {
+                teacherControls.style.display = 'none';
+            }
+            loadTimetables();
+        }
+
+        function renderTimetableList(timetables) {
+            timetableList.innerHTML = '';
+            if (timetables.length === 0) {
+                timetableList.innerHTML = '<p class="no-timetables">No timetables available. Create one if you have the required permissions.</p>';
+                return;
+            }
+            timetables.forEach(t => {
+                const div = document.createElement('div');
+                div.className = 'timetable-item';
+                div.innerHTML = `
+                    <span>Timetable #${t.id} - ${new Date(t.created_at).toLocaleString()}</span>
+                    <div class="timetable-item-actions">
+                        <button onclick="viewTimetable(${t.id})">View</button>
+                        <button onclick="exportTimetable(${t.id})">Export</button>
+                        <button class="delete-btn" onclick="deleteTimetable(${t.id})">Delete</button>
+                    </div>
+                `;
+                timetableList.appendChild(div);
+            });
+        }
+
+        function renderTimetable(data) {
+            const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+            const slots = ['9:00', '10:00', '11:00', '12:00', '14:00', '15:00', '16:00'];
+            let html = '<table class="timetable-table"><thead><tr><th>Time</th>';
+            days.forEach(day => html += `<th>${day}</th>`);
+            html += '</tr></thead><tbody>';
+            slots.forEach(slot => {
+                html += `<tr><td>${slot}</td>`;
+                days.forEach(day => {
+                    const { subject, teacher, room } = data[day][slot];
+                    html += `<td>${subject}<br><small>${teacher} - ${room}</small></td>`;
+                });
+                html += '</tr>';
+            });
+            html += '</tbody></table>';
+            timetableDisplay.innerHTML = html;
+        }
+
+        // Subject Form Management
+        let subjectRowCount = 0;
+
+        function addSubjectRow() {
+            subjectRowCount++;
+            const div = document.createElement('div');
+            div.className = 'form-group subject-row';
+            div.innerHTML = `
+                <label for="subjectName${subjectRowCount}">Subject Name</label>
+                <input type="text" id="subjectName${subjectRowCount}" required>
+                <label for="teacherName${subjectRowCount}">Teacher Name</label>
+                <input type="text" id="teacherName${subjectRowCount}" required>
+                <label for="maxSlots${subjectRowCount}">Max Daily Slots</label>
+                <input type="number" id="maxSlots${subjectRowCount}" min="1" max="5" value="2">
+                <label for="rooms${subjectRowCount}">Preferred Rooms (comma-separated)</label>
+                <input type="text" id="rooms${subjectRowCount}" placeholder="e.g., Room A, Room B">
+                <button type="button" onclick="removeSubjectRow(this)">Remove</button>
+            `;
+            subjectsContainer.appendChild(div);
+        }
+
+        function removeSubjectRow(button) {
+            button.parentElement.remove();
+        }
+
+        // Event Handlers
+        authForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const data = { username, password };
+            if (!isLogin) data.role = document.getElementById('role').value;
+
+            try {
+                const endpoint = isLogin ? '/login' : '/register';
+                const response = await apiRequest(endpoint, 'POST', data);
+                token = response.token;
+                user = response.user;
+                localStorage.setItem('token', token);
+                localStorage.setItem('user', JSON.stringify(user));
+                showDashboard();
+                showMessage(authMessage, response.message);
+            } catch (error) {
+                showMessage(authMessage, error.message, true);
+            }
+        });
+
+        toggleAuth.addEventListener('click', () => {
+            isLogin = !isLogin;
+            authTitle.textContent = isLogin ? 'Login' : 'Register';
+            roleGroup.style.display = isLogin ? 'none' : 'block';
+            toggleAuth.textContent = isLogin ? 'Register instead' : 'Login instead';
+        });
+
+        generateBtn.addEventListener('click', async () => {
+            try {
+                const response = await apiRequest('/timetables', 'POST');
+                renderTimetable(response.data);
+                loadTimetables();
+                showMessage(dashboardMessage, 'Timetable generated successfully');
+            } catch (error) {
+                showMessage(dashboardMessage, error.message, true);
+            }
+        });
+
+        addSubjectsBtn.addEventListener('click', () => {
+            subjectForm.classList.toggle('active');
+        });
+
+        addSubjectRowBtn.addEventListener('click', addSubjectRow);
+
+        subjectsForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const subjects = [];
+            for (let i = 0; i <= subjectRowCount; i++) {
+                const name = document.getElementById(`subjectName${i}`)?.value;
+                const teacher = document.getElementById(`teacherName${i}`)?.value;
+                const maxSlots = parseInt(document.getElementById(`maxSlots${i}`)?.value) || 2;
+                const roomsInput = document.getElementById(`rooms${i}`)?.value;
+                const preferredRooms = roomsInput ? roomsInput.split(',').map(r => r.trim()) : [];
+
+                if (name && teacher) {
+                    subjects.push({ name, teacher, max_daily_slots: maxSlots, preferred_rooms: preferredRooms });
+                }
+            }
+
+            if (subjects.length === 0) {
+                showMessage(subjectsMessage, 'No subjects provided', true);
+                return;
+            }
+
+            try {
+                const response = await apiRequest('/subjects', 'POST', { subjects });
+                showMessage(subjectsMessage, response.message);
+                subjectForm.classList.remove('active');
+                subjectsContainer.innerHTML = ''; // Clear form
+                subjectRowCount = 0;
+                addSubjectRow(); // Add one empty row back
+            } catch (error) {
+                showMessage(subjectsMessage, error.message, true);
+            }
+        });
+
+        logoutBtn.addEventListener('click', () => {
+            token = null;
+            user = null;
+            localStorage.removeItem('token');
+            localStorage.removeItem('user');
+            authContainer.style.display = 'block';
+            dashboard.style.display = 'none';
+            timetableDisplay.innerHTML = '';
+            showMessage(dashboardMessage, 'Logged out successfully');
+        });
+
+        async function loadTimetables() {
+            try {
+                const timetables = await apiRequest('/timetables');
+                renderTimetableList(timetables);
+            } catch (error) {
+                showMessage(dashboardMessage, error.message, true);
+                if (error.message.includes('Token')) {
+                    logoutBtn.click();
+                }
+            }
+        }
+
+        async function viewTimetable(id) {
+            try {
+                const response = await apiRequest(`/timetables/${id}`);
+                renderTimetable(response.data);
+            } catch (error) {
+                showMessage(dashboardMessage, error.message, true);
+            }
+        }
+
+        async function exportTimetable(id) {
+            try {
+                const response = await fetch(`${API_BASE_URL}/timetables/${id}/export`, {
+                    headers: { 'Authorization': `Bearer ${token}` }
+                });
+                if (!response.ok) throw new Error((await response.json()).message);
+                const blob = await response.blob();
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `timetable_${id}.json`;
+                a.click();
+                window.URL.revokeObjectURL(url);
+                showMessage(dashboardMessage, 'Timetable exported successfully');
+            } catch (error) {
+                showMessage(dashboardMessage, error.message, true);
+            }
+        }
+
+        async function deleteTimetable(id) {
+            if (!confirm('Are you sure you want to delete this timetable?')) return;
+            try {
+                const response = await apiRequest(`/timetables/${id}`, 'DELETE');
+                showMessage(dashboardMessage, response.message);
+                loadTimetables(); // Refresh the list
+            } catch (error) {
+                showMessage(dashboardMessage, error.message, true);
+            }
+        }
+
+        // Initialize
+        addSubjectRow(); // Add initial subject row
+        if (token && user) {
+            apiRequest('/timetables')
+                .then(() => {
+                    console.log("User role:", user.role);
+                    showDashboard();
+                })
+                .catch((error) => {
+                    console.error("Initialization error:", error.message);
+                    localStorage.clear();
+                    authContainer.style.display = 'block';
+                });
+        } else {
+            authContainer.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

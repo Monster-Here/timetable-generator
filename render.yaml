@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: timetable-generator
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --workers 2
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        fromDatabase:
+          name: timetable-db
+          property: connectionString
+
+databases:
+  - name: timetable-db
+    databaseName: timetable
+    user: timetable_user
+    plan: free

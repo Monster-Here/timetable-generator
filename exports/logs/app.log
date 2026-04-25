@@ -1,0 +1,488 @@
+2025-03-13 15:53:58,108 DEBUG: Database connection established
+2025-03-13 15:53:58,110 INFO: Database tables created or verified
+2025-03-13 15:53:58,182 DEBUG: Database connection established
+2025-03-13 15:53:58,878 INFO: Default users initialized
+2025-03-13 15:53:59,799 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.65.96:5000
+2025-03-13 15:53:59,799 INFO: [33mPress CTRL+C to quit[0m
+2025-03-13 15:53:59,802 INFO:  * Restarting with stat
+2025-03-13 15:54:00,562 DEBUG: Database connection established
+2025-03-13 15:54:00,565 INFO: Database tables created or verified
+2025-03-13 15:54:00,734 DEBUG: Database connection established
+2025-03-13 15:54:01,429 INFO: Default users initialized
+2025-03-13 15:54:01,465 WARNING:  * Debugger is active!
+2025-03-13 15:54:01,473 INFO:  * Debugger PIN: 143-078-679
+2025-03-13 15:54:22,744 INFO: 127.0.0.1 - - [13/Mar/2025 15:54:22] "GET / HTTP/1.1" 200 -
+2025-03-13 15:54:22,796 WARNING: Invalid token: Subject must be a string
+2025-03-13 15:54:22,797 INFO: 127.0.0.1 - - [13/Mar/2025 15:54:22] "[31m[1mGET /api/timetables HTTP/1.1[0m" 422 -
+2025-03-13 15:54:32,978 DEBUG: Database connection established
+2025-03-13 15:54:33,206 INFO: User logged in: deepthi
+2025-03-13 15:54:33,206 INFO: 127.0.0.1 - - [13/Mar/2025 15:54:33] "POST /api/login HTTP/1.1" 200 -
+2025-03-13 15:54:33,215 WARNING: Invalid token: Subject must be a string
+2025-03-13 15:54:33,215 INFO: 127.0.0.1 - - [13/Mar/2025 15:54:33] "[31m[1mGET /api/timetables HTTP/1.1[0m" 422 -
+2025-03-13 15:54:37,302 WARNING: Invalid token: Subject must be a string
+2025-03-13 15:54:37,302 INFO: 127.0.0.1 - - [13/Mar/2025 15:54:37] "[31m[1mPOST /api/timetables HTTP/1.1[0m" 422 -
+2025-03-13 15:55:40,243 INFO: 127.0.0.1 - - [13/Mar/2025 15:55:40] "[36mGET / HTTP/1.1[0m" 304 -
+2025-03-13 15:55:40,291 WARNING: Invalid token: Subject must be a string
+2025-03-13 15:55:40,292 INFO: 127.0.0.1 - - [13/Mar/2025 15:55:40] "[31m[1mGET /api/timetables HTTP/1.1[0m" 422 -
+2025-03-13 15:55:51,731 DEBUG: Database connection established
+2025-03-13 15:55:51,963 WARNING: Failed login attempt for deepthi
+2025-03-13 15:55:51,964 INFO: 127.0.0.1 - - [13/Mar/2025 15:55:51] "[31m[1mPOST /api/login HTTP/1.1[0m" 401 -
+2025-03-13 15:55:56,813 DEBUG: Database connection established
+2025-03-13 15:55:57,047 WARNING: Failed login attempt for deepthi
+2025-03-13 15:55:57,048 INFO: 127.0.0.1 - - [13/Mar/2025 15:55:57] "[31m[1mPOST /api/login HTTP/1.1[0m" 401 -
+2025-03-13 15:55:58,574 DEBUG: Database connection established
+2025-03-13 15:55:58,819 INFO: User logged in: deepthi
+2025-03-13 15:55:58,820 INFO: 127.0.0.1 - - [13/Mar/2025 15:55:58] "POST /api/login HTTP/1.1" 200 -
+2025-03-13 15:55:58,829 WARNING: Invalid token: Subject must be a string
+2025-03-13 15:55:58,830 INFO: 127.0.0.1 - - [13/Mar/2025 15:55:58] "[31m[1mGET /api/timetables HTTP/1.1[0m" 422 -
+2025-03-13 15:56:10,039 WARNING: Invalid token: Subject must be a string
+2025-03-13 15:56:10,040 INFO: 127.0.0.1 - - [13/Mar/2025 15:56:10] "[31m[1mPOST /api/timetables HTTP/1.1[0m" 422 -
+2025-03-13 16:00:22,334 INFO:  * Detected change in 'C:\\Users\\prave\\Desktop\\bikash\\app.py', reloading
+2025-03-13 16:00:22,441 INFO:  * Restarting with stat
+2025-03-13 16:00:23,479 ERROR: Database connection failed: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+2025-03-13 16:07:21,325 DEBUG: Database connection established
+2025-03-13 16:07:21,343 INFO: Database tables created or verified
+2025-03-13 16:07:21,404 DEBUG: Database connection established
+2025-03-13 16:07:22,094 INFO: Default users initialized
+2025-03-13 16:07:23,202 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.65.96:5000
+2025-03-13 16:07:23,202 INFO: [33mPress CTRL+C to quit[0m
+2025-03-13 16:07:23,207 INFO:  * Restarting with stat
+2025-03-13 16:07:24,042 DEBUG: Database connection established
+2025-03-13 16:07:24,043 INFO: Database tables created or verified
+2025-03-13 16:07:24,112 DEBUG: Database connection established
+2025-03-13 16:07:24,815 INFO: Default users initialized
+2025-03-13 16:07:24,854 WARNING:  * Debugger is active!
+2025-03-13 16:07:24,862 INFO:  * Debugger PIN: 143-078-679
+2025-03-13 16:07:26,577 INFO: 127.0.0.1 - - [13/Mar/2025 16:07:26] "GET / HTTP/1.1" 200 -
+2025-03-13 16:07:26,615 WARNING: Invalid token: Signature verification failed
+2025-03-13 16:07:26,615 INFO: 127.0.0.1 - - [13/Mar/2025 16:07:26] "[31m[1mGET /api/timetables HTTP/1.1[0m" 422 -
+2025-03-13 16:07:34,230 DEBUG: Database connection established
+2025-03-13 16:07:34,479 INFO: User logged in: deepthi
+2025-03-13 16:07:34,479 INFO: 127.0.0.1 - - [13/Mar/2025 16:07:34] "POST /api/login HTTP/1.1" 200 -
+2025-03-13 16:07:34,488 WARNING: Invalid token: Subject must be a string
+2025-03-13 16:07:34,488 INFO: 127.0.0.1 - - [13/Mar/2025 16:07:34] "[31m[1mGET /api/timetables HTTP/1.1[0m" 422 -
+2025-03-13 16:07:36,314 WARNING: Invalid token: Subject must be a string
+2025-03-13 16:07:36,314 INFO: 127.0.0.1 - - [13/Mar/2025 16:07:36] "[31m[1mPOST /api/timetables HTTP/1.1[0m" 422 -
+2025-03-13 16:07:37,041 WARNING: Invalid token: Subject must be a string
+2025-03-13 16:07:37,042 INFO: 127.0.0.1 - - [13/Mar/2025 16:07:37] "[31m[1mPOST /api/timetables HTTP/1.1[0m" 422 -
+2025-03-13 16:07:37,525 WARNING: Invalid token: Subject must be a string
+2025-03-13 16:07:37,526 INFO: 127.0.0.1 - - [13/Mar/2025 16:07:37] "[31m[1mPOST /api/timetables HTTP/1.1[0m" 422 -
+2025-03-13 16:07:37,678 WARNING: Invalid token: Subject must be a string
+2025-03-13 16:07:37,678 INFO: 127.0.0.1 - - [13/Mar/2025 16:07:37] "[31m[1mPOST /api/timetables HTTP/1.1[0m" 422 -
+2025-03-13 16:07:37,768 WARNING: Invalid token: Subject must be a string
+2025-03-13 16:07:37,768 INFO: 127.0.0.1 - - [13/Mar/2025 16:07:37] "[31m[1mPOST /api/timetables HTTP/1.1[0m" 422 -
+2025-03-13 16:07:37,845 WARNING: Invalid token: Subject must be a string
+2025-03-13 16:07:37,845 INFO: 127.0.0.1 - - [13/Mar/2025 16:07:37] "[31m[1mPOST /api/timetables HTTP/1.1[0m" 422 -
+2025-03-13 16:07:38,023 WARNING: Invalid token: Subject must be a string
+2025-03-13 16:07:38,024 INFO: 127.0.0.1 - - [13/Mar/2025 16:07:38] "[31m[1mPOST /api/timetables HTTP/1.1[0m" 422 -
+2025-03-13 16:07:38,194 WARNING: Invalid token: Subject must be a string
+2025-03-13 16:07:38,194 INFO: 127.0.0.1 - - [13/Mar/2025 16:07:38] "[31m[1mPOST /api/timetables HTTP/1.1[0m" 422 -
+2025-03-13 16:07:38,352 WARNING: Invalid token: Subject must be a string
+2025-03-13 16:07:38,353 INFO: 127.0.0.1 - - [13/Mar/2025 16:07:38] "[31m[1mPOST /api/timetables HTTP/1.1[0m" 422 -
+2025-03-13 16:07:38,536 WARNING: Invalid token: Subject must be a string
+2025-03-13 16:07:38,537 INFO: 127.0.0.1 - - [13/Mar/2025 16:07:38] "[31m[1mPOST /api/timetables HTTP/1.1[0m" 422 -
+2025-03-13 16:12:57,654 DEBUG: Database connection established
+2025-03-13 16:12:57,655 INFO: Database tables created or verified
+2025-03-13 16:12:57,828 DEBUG: Database connection established
+2025-03-13 16:12:58,499 INFO: Default users initialized
+2025-03-13 16:12:59,400 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.65.96:5000
+2025-03-13 16:12:59,400 INFO: [33mPress CTRL+C to quit[0m
+2025-03-13 16:12:59,403 INFO:  * Restarting with stat
+2025-03-13 16:13:00,059 DEBUG: Database connection established
+2025-03-13 16:13:00,061 INFO: Database tables created or verified
+2025-03-13 16:13:00,119 DEBUG: Database connection established
+2025-03-13 16:13:00,822 INFO: Default users initialized
+2025-03-13 16:13:00,854 WARNING:  * Debugger is active!
+2025-03-13 16:13:00,861 INFO:  * Debugger PIN: 143-078-679
+2025-03-13 19:59:55,447 DEBUG: Database connection established
+2025-03-13 19:59:55,468 INFO: Database tables created or verified
+2025-03-13 19:59:55,531 DEBUG: Database connection established
+2025-03-13 19:59:56,238 INFO: Default users initialized
+2025-03-13 19:59:56,340 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.65.96:5000
+2025-03-13 19:59:56,340 INFO: [33mPress CTRL+C to quit[0m
+2025-03-13 19:59:56,344 INFO:  * Restarting with stat
+2025-03-13 19:59:57,075 DEBUG: Database connection established
+2025-03-13 19:59:57,077 INFO: Database tables created or verified
+2025-03-13 19:59:57,167 DEBUG: Database connection established
+2025-03-13 19:59:57,906 INFO: Default users initialized
+2025-03-13 19:59:57,935 WARNING:  * Debugger is active!
+2025-03-13 19:59:57,946 INFO:  * Debugger PIN: 143-078-679
+2025-03-13 20:01:01,910 INFO: 127.0.0.1 - - [13/Mar/2025 20:01:01] "GET / HTTP/1.1" 200 -
+2025-03-13 20:01:01,944 WARNING: Invalid token: Subject must be a string
+2025-03-13 20:01:01,945 INFO: 127.0.0.1 - - [13/Mar/2025 20:01:01] "[31m[1mGET /api/timetables HTTP/1.1[0m" 422 -
+2025-03-13 20:01:06,376 INFO: 127.0.0.1 - - [13/Mar/2025 20:01:06] "[36mGET / HTTP/1.1[0m" 304 -
+2025-03-13 21:52:20,306 DEBUG: Database connection established
+2025-03-13 21:52:20,324 INFO: Database tables created or verified
+2025-03-13 21:52:20,488 DEBUG: Database connection established
+2025-03-13 21:52:21,187 INFO: Default users initialized
+2025-03-13 21:52:21,359 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.65.96:5000
+2025-03-13 21:52:21,359 INFO: [33mPress CTRL+C to quit[0m
+2025-03-13 21:52:21,372 INFO:  * Restarting with stat
+2025-03-13 21:52:22,042 DEBUG: Database connection established
+2025-03-13 21:52:22,044 INFO: Database tables created or verified
+2025-03-13 21:52:22,125 DEBUG: Database connection established
+2025-03-13 21:52:22,833 INFO: Default users initialized
+2025-03-13 21:52:22,871 WARNING:  * Debugger is active!
+2025-03-13 21:52:22,885 INFO:  * Debugger PIN: 143-078-679
+2025-03-13 21:52:35,101 INFO: 127.0.0.1 - - [13/Mar/2025 21:52:35] "[36mGET / HTTP/1.1[0m" 304 -
+2025-03-13 21:52:35,786 INFO: 127.0.0.1 - - [13/Mar/2025 21:52:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-13 21:55:40,278 DEBUG: Database connection established
+2025-03-13 21:55:40,337 INFO: Database tables created or verified
+2025-03-13 21:55:40,408 DEBUG: Database connection established
+2025-03-13 21:55:41,145 INFO: Default users initialized
+2025-03-13 21:55:41,253 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.65.96:5000
+2025-03-13 21:55:41,253 INFO: [33mPress CTRL+C to quit[0m
+2025-03-13 21:55:41,256 INFO:  * Restarting with stat
+2025-03-13 21:55:41,985 DEBUG: Database connection established
+2025-03-13 21:55:41,986 INFO: Database tables created or verified
+2025-03-13 21:55:42,053 DEBUG: Database connection established
+2025-03-13 21:55:42,760 INFO: Default users initialized
+2025-03-13 21:55:42,801 WARNING:  * Debugger is active!
+2025-03-13 21:55:42,808 INFO:  * Debugger PIN: 143-078-679
+2025-03-13 21:59:41,778 DEBUG: Database connection established
+2025-03-13 21:59:41,783 INFO: Database tables created or verified
+2025-03-13 21:59:41,854 DEBUG: Database connection established
+2025-03-13 21:59:42,564 INFO: Default users initialized
+2025-03-13 21:59:42,658 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.65.96:5000
+2025-03-13 21:59:42,658 INFO: [33mPress CTRL+C to quit[0m
+2025-03-13 21:59:42,661 INFO:  * Restarting with stat
+2025-03-13 21:59:43,345 DEBUG: Database connection established
+2025-03-13 21:59:43,347 INFO: Database tables created or verified
+2025-03-13 21:59:43,419 DEBUG: Database connection established
+2025-03-13 21:59:44,116 INFO: Default users initialized
+2025-03-13 21:59:44,155 WARNING:  * Debugger is active!
+2025-03-13 21:59:44,161 INFO:  * Debugger PIN: 143-078-679
+2025-03-13 22:00:01,830 INFO: 127.0.0.1 - - [13/Mar/2025 22:00:01] "[36mGET / HTTP/1.1[0m" 304 -
+2025-03-13 22:03:10,822 DEBUG: Database connection established
+2025-03-13 22:03:10,825 INFO: Database tables created or verified
+2025-03-13 22:03:10,992 DEBUG: Database connection established
+2025-03-13 22:03:11,709 INFO: Default users initialized
+2025-03-13 22:03:11,789 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.65.96:5000
+2025-03-13 22:03:11,789 INFO: [33mPress CTRL+C to quit[0m
+2025-03-13 22:03:11,792 INFO:  * Restarting with stat
+2025-03-13 22:03:12,639 DEBUG: Database connection established
+2025-03-13 22:03:12,640 INFO: Database tables created or verified
+2025-03-13 22:03:12,815 DEBUG: Database connection established
+2025-03-13 22:03:13,475 INFO: Default users initialized
+2025-03-13 22:03:13,515 WARNING:  * Debugger is active!
+2025-03-13 22:03:13,522 INFO:  * Debugger PIN: 143-078-679
+2025-03-13 22:03:20,348 INFO: 127.0.0.1 - - [13/Mar/2025 22:03:20] "GET / HTTP/1.1" 200 -
+2025-03-13 22:05:11,314 INFO: 127.0.0.1 - - [13/Mar/2025 22:05:11] "[36mGET / HTTP/1.1[0m" 304 -
+2025-03-13 22:16:12,119 INFO:  * Detected change in 'C:\\Users\\prave\\Desktop\\bikash\\app.py', reloading
+2025-03-13 22:16:12,237 INFO:  * Restarting with stat
+2025-03-13 22:18:16,714 - INFO - Starting Flask application...
+2025-03-13 22:18:16,813 - INFO - Database tables created or verified
+2025-03-13 22:18:17,931 - INFO - Default users initialized
+2025-03-13 22:18:18,025 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.65.96:5000
+2025-03-13 22:18:18,025 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-13 22:18:18,028 - INFO -  * Restarting with stat
+2025-03-13 22:18:18,682 - INFO - Starting Flask application...
+2025-03-13 22:18:18,782 - INFO - Database tables created or verified
+2025-03-13 22:18:19,874 - INFO - Default users initialized
+2025-03-13 22:18:19,918 - WARNING -  * Debugger is active!
+2025-03-13 22:18:19,926 - INFO -  * Debugger PIN: 143-078-679
+2025-03-13 22:18:27,365 - INFO - 127.0.0.1 - - [13/Mar/2025 22:18:27] "[36mGET / HTTP/1.1[0m" 304 -
+2025-03-13 22:20:39,007 - INFO - 127.0.0.1 - - [13/Mar/2025 22:20:39] "[36mGET / HTTP/1.1[0m" 304 -
+2025-03-13 22:21:15,460 - INFO -  * Detected change in 'C:\\Users\\prave\\Desktop\\bikash\\app.py', reloading
+2025-03-13 22:21:15,611 - INFO -  * Restarting with stat
+2025-03-13 22:23:44,709 - INFO - Starting Flask application...
+2025-03-13 22:23:44,803 - INFO - Database tables created or verified
+2025-03-13 22:23:45,925 - INFO - Default users initialized
+2025-03-13 22:23:46,019 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.65.96:5000
+2025-03-13 22:23:46,019 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-13 22:23:46,022 - INFO -  * Restarting with stat
+2025-03-13 22:23:46,688 - INFO - Starting Flask application...
+2025-03-13 22:23:46,798 - INFO - Database tables created or verified
+2025-03-13 22:23:47,951 - INFO - Default users initialized
+2025-03-13 22:23:47,995 - WARNING -  * Debugger is active!
+2025-03-13 22:23:48,007 - INFO -  * Debugger PIN: 143-078-679
+2025-03-13 22:23:54,682 - INFO - 127.0.0.1 - - [13/Mar/2025 22:23:54] "GET / HTTP/1.1" 200 -
+2025-03-13 22:24:09,627 - INFO - User registered: praveens
+2025-03-13 22:24:09,627 - INFO - 127.0.0.1 - - [13/Mar/2025 22:24:09] "[35m[1mPOST /api/register HTTP/1.1[0m" 201 -
+2025-03-13 22:24:09,738 - INFO - Retrieved 0 timetables for user 4
+2025-03-13 22:24:09,740 - INFO - 127.0.0.1 - - [13/Mar/2025 22:24:09] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 22:24:22,823 - INFO - User logged in: praveens
+2025-03-13 22:24:22,824 - INFO - 127.0.0.1 - - [13/Mar/2025 22:24:22] "POST /api/login HTTP/1.1" 200 -
+2025-03-13 22:24:23,009 - INFO - Retrieved 0 timetables for user 4
+2025-03-13 22:24:23,010 - INFO - 127.0.0.1 - - [13/Mar/2025 22:24:23] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 22:28:57,916 - INFO - Application running on http://0.0.0.0:5000
+2025-03-13 22:28:58,001 - INFO - Application running on http://0.0.0.0:5000
+2025-03-13 22:29:00,808 - INFO - Starting Flask application...
+2025-03-13 22:29:00,886 - INFO - Database tables created or verified
+2025-03-13 22:29:02,014 - INFO - Default users initialized
+2025-03-13 22:29:02,098 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.65.96:5000
+2025-03-13 22:29:02,098 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-13 22:29:02,101 - INFO -  * Restarting with stat
+2025-03-13 22:29:02,756 - INFO - Starting Flask application...
+2025-03-13 22:29:02,893 - INFO - Database tables created or verified
+2025-03-13 22:29:04,007 - INFO - Default users initialized
+2025-03-13 22:29:04,043 - WARNING -  * Debugger is active!
+2025-03-13 22:29:04,056 - INFO -  * Debugger PIN: 143-078-679
+2025-03-13 22:29:07,870 - INFO - 127.0.0.1 - - [13/Mar/2025 22:29:07] "GET / HTTP/1.1" 200 -
+2025-03-13 22:29:07,957 - INFO - Retrieved 0 timetables for user 4
+2025-03-13 22:29:07,958 - INFO - 127.0.0.1 - - [13/Mar/2025 22:29:07] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 22:29:08,026 - INFO - Retrieved 0 timetables for user 4
+2025-03-13 22:29:08,027 - INFO - 127.0.0.1 - - [13/Mar/2025 22:29:08] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 22:29:22,599 - INFO - User registered: janu
+2025-03-13 22:29:22,600 - INFO - 127.0.0.1 - - [13/Mar/2025 22:29:22] "[35m[1mPOST /api/register HTTP/1.1[0m" 201 -
+2025-03-13 22:29:22,716 - INFO - Retrieved 0 timetables for user 5
+2025-03-13 22:29:22,717 - INFO - 127.0.0.1 - - [13/Mar/2025 22:29:22] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 22:29:26,558 - INFO - Timetable 1 created by user 5
+2025-03-13 22:29:26,559 - INFO - 127.0.0.1 - - [13/Mar/2025 22:29:26] "[35m[1mPOST /api/timetables HTTP/1.1[0m" 201 -
+2025-03-13 22:29:26,795 - INFO - Retrieved 1 timetables for user 5
+2025-03-13 22:29:26,797 - INFO - 127.0.0.1 - - [13/Mar/2025 22:29:26] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 22:29:31,376 - INFO - Timetable 1 retrieved for user 5
+2025-03-13 22:29:31,378 - INFO - 127.0.0.1 - - [13/Mar/2025 22:29:31] "GET /api/timetables/1 HTTP/1.1" 200 -
+2025-03-13 22:29:32,983 - INFO - Timetable 1 exported for user 5
+2025-03-13 22:29:33,007 - INFO - 127.0.0.1 - - [13/Mar/2025 22:29:33] "GET /api/timetables/1/export HTTP/1.1" 200 -
+2025-03-13 22:33:04,167 - INFO - User registered: praveen
+2025-03-13 22:33:04,169 - INFO - 127.0.0.1 - - [13/Mar/2025 22:33:04] "[35m[1mPOST /api/register HTTP/1.1[0m" 201 -
+2025-03-13 22:33:04,262 - INFO - Retrieved 0 timetables for user 6
+2025-03-13 22:33:04,263 - INFO - 127.0.0.1 - - [13/Mar/2025 22:33:04] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 22:33:08,463 - INFO - Timetable 2 created by user 6
+2025-03-13 22:33:08,464 - INFO - 127.0.0.1 - - [13/Mar/2025 22:33:08] "[35m[1mPOST /api/timetables HTTP/1.1[0m" 201 -
+2025-03-13 22:33:08,714 - INFO - Retrieved 1 timetables for user 6
+2025-03-13 22:33:08,716 - INFO - 127.0.0.1 - - [13/Mar/2025 22:33:08] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 22:33:44,663 - WARNING - Username already exists: praveen
+2025-03-13 22:33:44,664 - INFO - 127.0.0.1 - - [13/Mar/2025 22:33:44] "[31m[1mPOST /api/register HTTP/1.1[0m" 400 -
+2025-03-13 22:33:49,816 - WARNING - Username already exists: praveens
+2025-03-13 22:33:49,817 - INFO - 127.0.0.1 - - [13/Mar/2025 22:33:49] "[31m[1mPOST /api/register HTTP/1.1[0m" 400 -
+2025-03-13 22:33:55,310 - INFO - User registered: praveenss
+2025-03-13 22:33:55,311 - INFO - 127.0.0.1 - - [13/Mar/2025 22:33:55] "[35m[1mPOST /api/register HTTP/1.1[0m" 201 -
+2025-03-13 22:33:55,411 - INFO - Retrieved 0 timetables for user 7
+2025-03-13 22:33:55,412 - INFO - 127.0.0.1 - - [13/Mar/2025 22:33:55] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 22:34:09,936 - WARNING - Username already exists: praveenss
+2025-03-13 22:34:09,937 - INFO - 127.0.0.1 - - [13/Mar/2025 22:34:09] "[31m[1mPOST /api/register HTTP/1.1[0m" 400 -
+2025-03-13 22:34:14,621 - INFO - User registered: praveenssss
+2025-03-13 22:34:14,622 - INFO - 127.0.0.1 - - [13/Mar/2025 22:34:14] "[35m[1mPOST /api/register HTTP/1.1[0m" 201 -
+2025-03-13 22:34:14,824 - INFO - Retrieved 0 timetables for user 8
+2025-03-13 22:34:14,826 - INFO - 127.0.0.1 - - [13/Mar/2025 22:34:14] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 22:34:16,595 - INFO - Timetable 3 created by user 8
+2025-03-13 22:34:16,596 - INFO - 127.0.0.1 - - [13/Mar/2025 22:34:16] "[35m[1mPOST /api/timetables HTTP/1.1[0m" 201 -
+2025-03-13 22:34:16,945 - INFO - Retrieved 1 timetables for user 8
+2025-03-13 22:34:16,947 - INFO - 127.0.0.1 - - [13/Mar/2025 22:34:16] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 22:34:22,530 - INFO - Timetable 3 retrieved for user 8
+2025-03-13 22:34:22,531 - INFO - 127.0.0.1 - - [13/Mar/2025 22:34:22] "GET /api/timetables/3 HTTP/1.1" 200 -
+2025-03-13 22:34:23,774 - INFO - Timetable 3 retrieved for user 8
+2025-03-13 22:34:23,776 - INFO - 127.0.0.1 - - [13/Mar/2025 22:34:23] "GET /api/timetables/3 HTTP/1.1" 200 -
+2025-03-13 22:34:24,204 - INFO - Timetable 3 retrieved for user 8
+2025-03-13 22:34:24,205 - INFO - 127.0.0.1 - - [13/Mar/2025 22:34:24] "GET /api/timetables/3 HTTP/1.1" 200 -
+2025-03-13 22:34:25,136 - INFO - Timetable 3 retrieved for user 8
+2025-03-13 22:34:25,138 - INFO - 127.0.0.1 - - [13/Mar/2025 22:34:25] "GET /api/timetables/3 HTTP/1.1" 200 -
+2025-03-13 22:34:25,642 - INFO - Timetable 3 retrieved for user 8
+2025-03-13 22:34:25,644 - INFO - 127.0.0.1 - - [13/Mar/2025 22:34:25] "GET /api/timetables/3 HTTP/1.1" 200 -
+2025-03-13 22:34:25,897 - INFO - Timetable 3 retrieved for user 8
+2025-03-13 22:34:25,898 - INFO - 127.0.0.1 - - [13/Mar/2025 22:34:25] "GET /api/timetables/3 HTTP/1.1" 200 -
+2025-03-13 23:09:13,359 - INFO - Starting Flask application...
+2025-03-13 23:09:13,578 - INFO - Database tables created or verified
+2025-03-13 23:09:14,728 - INFO - Default users initialized
+2025-03-13 23:09:15,842 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.65.96:5000
+2025-03-13 23:09:15,842 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-13 23:09:15,848 - INFO -  * Restarting with stat
+2025-03-13 23:09:16,687 - INFO - Starting Flask application...
+2025-03-13 23:09:16,784 - INFO - Database tables created or verified
+2025-03-13 23:09:17,923 - INFO - Default users initialized
+2025-03-13 23:09:17,969 - WARNING -  * Debugger is active!
+2025-03-13 23:09:17,984 - INFO -  * Debugger PIN: 143-078-679
+2025-03-13 23:09:20,468 - INFO - 127.0.0.1 - - [13/Mar/2025 23:09:20] "GET / HTTP/1.1" 200 -
+2025-03-13 23:09:21,163 - INFO - 127.0.0.1 - - [13/Mar/2025 23:09:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-13 23:09:36,791 - INFO - 127.0.0.1 - - [13/Mar/2025 23:09:36] "GET / HTTP/1.1" 200 -
+2025-03-13 23:09:46,055 - INFO - 127.0.0.1 - - [13/Mar/2025 23:09:46] "[36mGET / HTTP/1.1[0m" 304 -
+2025-03-13 23:12:49,131 - INFO - 127.0.0.1 - - [13/Mar/2025 23:12:49] "GET / HTTP/1.1" 200 -
+2025-03-13 23:12:49,373 - INFO - Retrieved 1 timetables for user 8
+2025-03-13 23:12:49,375 - INFO - 127.0.0.1 - - [13/Mar/2025 23:12:49] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 23:12:49,487 - INFO - Retrieved 1 timetables for user 8
+2025-03-13 23:12:49,489 - INFO - 127.0.0.1 - - [13/Mar/2025 23:12:49] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 23:13:00,842 - INFO - User logged in: janu
+2025-03-13 23:13:00,843 - INFO - 127.0.0.1 - - [13/Mar/2025 23:13:00] "POST /api/login HTTP/1.1" 200 -
+2025-03-13 23:13:00,945 - INFO - Retrieved 1 timetables for user 5
+2025-03-13 23:13:00,946 - INFO - 127.0.0.1 - - [13/Mar/2025 23:13:00] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 23:14:15,368 - INFO - Subjects added for user 5
+2025-03-13 23:14:15,369 - INFO - 127.0.0.1 - - [13/Mar/2025 23:14:15] "[35m[1mPOST /api/subjects HTTP/1.1[0m" 201 -
+2025-03-13 23:14:18,036 - INFO - Timetable 1 retrieved for user 5
+2025-03-13 23:14:18,038 - INFO - 127.0.0.1 - - [13/Mar/2025 23:14:18] "GET /api/timetables/1 HTTP/1.1" 200 -
+2025-03-13 23:14:28,243 - INFO - Timetable 4 created by user 5
+2025-03-13 23:14:28,244 - INFO - 127.0.0.1 - - [13/Mar/2025 23:14:28] "[35m[1mPOST /api/timetables HTTP/1.1[0m" 201 -
+2025-03-13 23:14:28,335 - INFO - Retrieved 2 timetables for user 5
+2025-03-13 23:14:28,337 - INFO - 127.0.0.1 - - [13/Mar/2025 23:14:28] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 23:15:08,664 - INFO - Subjects added for user 5
+2025-03-13 23:15:08,665 - INFO - 127.0.0.1 - - [13/Mar/2025 23:15:08] "[35m[1mPOST /api/subjects HTTP/1.1[0m" 201 -
+2025-03-13 23:15:10,173 - INFO - Timetable 5 created by user 5
+2025-03-13 23:15:10,175 - INFO - 127.0.0.1 - - [13/Mar/2025 23:15:10] "[35m[1mPOST /api/timetables HTTP/1.1[0m" 201 -
+2025-03-13 23:15:10,583 - INFO - Retrieved 3 timetables for user 5
+2025-03-13 23:15:10,590 - INFO - 127.0.0.1 - - [13/Mar/2025 23:15:10] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 23:15:39,940 - INFO - Subjects added for user 5
+2025-03-13 23:15:39,941 - INFO - 127.0.0.1 - - [13/Mar/2025 23:15:39] "[35m[1mPOST /api/subjects HTTP/1.1[0m" 201 -
+2025-03-13 23:15:49,652 - INFO - Timetable 6 created by user 5
+2025-03-13 23:15:49,653 - INFO - 127.0.0.1 - - [13/Mar/2025 23:15:49] "[35m[1mPOST /api/timetables HTTP/1.1[0m" 201 -
+2025-03-13 23:15:49,827 - INFO - Retrieved 4 timetables for user 5
+2025-03-13 23:15:49,830 - INFO - 127.0.0.1 - - [13/Mar/2025 23:15:49] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 23:19:35,319 - INFO - Application running on http://0.0.0.0:5000
+2025-03-13 23:19:35,451 - INFO - Application running on http://0.0.0.0:5000
+2025-03-13 23:19:38,353 - INFO - Starting Flask application...
+2025-03-13 23:19:38,453 - INFO - Database tables created or verified
+2025-03-13 23:19:39,559 - INFO - Default users initialized
+2025-03-13 23:19:40,506 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.65.96:5000
+2025-03-13 23:19:40,506 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-13 23:19:40,510 - INFO -  * Restarting with stat
+2025-03-13 23:19:41,159 - INFO - Starting Flask application...
+2025-03-13 23:19:41,252 - INFO - Database tables created or verified
+2025-03-13 23:19:42,371 - INFO - Default users initialized
+2025-03-13 23:19:42,422 - WARNING -  * Debugger is active!
+2025-03-13 23:19:42,429 - INFO -  * Debugger PIN: 143-078-679
+2025-03-13 23:19:45,810 - INFO - 127.0.0.1 - - [13/Mar/2025 23:19:45] "GET / HTTP/1.1" 200 -
+2025-03-13 23:19:46,040 - INFO - Retrieved 4 timetables for user 5
+2025-03-13 23:19:46,043 - INFO - 127.0.0.1 - - [13/Mar/2025 23:19:46] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 23:19:46,143 - INFO - Retrieved 4 timetables for user 5
+2025-03-13 23:19:46,145 - INFO - 127.0.0.1 - - [13/Mar/2025 23:19:46] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 23:19:50,675 - INFO - Timetable 1 retrieved for user 5
+2025-03-13 23:19:50,676 - INFO - 127.0.0.1 - - [13/Mar/2025 23:19:50] "GET /api/timetables/1 HTTP/1.1" 200 -
+2025-03-13 23:20:00,146 - INFO - Timetable 4 retrieved for user 5
+2025-03-13 23:20:00,147 - INFO - 127.0.0.1 - - [13/Mar/2025 23:20:00] "GET /api/timetables/4 HTTP/1.1" 200 -
+2025-03-13 23:20:04,094 - INFO - Timetable 6 retrieved for user 5
+2025-03-13 23:20:04,095 - INFO - 127.0.0.1 - - [13/Mar/2025 23:20:04] "GET /api/timetables/6 HTTP/1.1" 200 -
+2025-03-13 23:28:40,561 - INFO -  * Detected change in 'C:\\Users\\prave\\Desktop\\bikash\\app.py', reloading
+2025-03-13 23:28:40,655 - INFO -  * Restarting with stat
+2025-03-13 23:28:54,218 - INFO - Starting Flask application...
+2025-03-13 23:28:54,318 - INFO - Database tables created or verified
+2025-03-13 23:28:55,048 - INFO - Default users initialized
+2025-03-13 23:28:55,969 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.65.96:5000
+2025-03-13 23:28:55,969 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-13 23:28:55,972 - INFO -  * Restarting with stat
+2025-03-13 23:28:56,630 - INFO - Starting Flask application...
+2025-03-13 23:28:56,729 - INFO - Database tables created or verified
+2025-03-13 23:28:57,460 - INFO - Default users initialized
+2025-03-13 23:28:57,509 - WARNING -  * Debugger is active!
+2025-03-13 23:28:57,518 - INFO -  * Debugger PIN: 143-078-679
+2025-03-13 23:29:16,614 - INFO - 127.0.0.1 - - [13/Mar/2025 23:29:16] "GET / HTTP/1.1" 200 -
+2025-03-13 23:29:16,753 - ERROR - Error fetching timetables: column "is_deleted" does not exist
+LINE 3:                 WHERE created_by = 5 AND NOT is_deleted
+                                                     ^
+
+2025-03-13 23:29:16,755 - INFO - 127.0.0.1 - - [13/Mar/2025 23:29:16] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 23:29:16,849 - ERROR - Error fetching timetables: column "is_deleted" does not exist
+LINE 3:                 WHERE created_by = 5 AND NOT is_deleted
+                                                     ^
+
+2025-03-13 23:29:16,850 - INFO - 127.0.0.1 - - [13/Mar/2025 23:29:16] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 23:29:40,653 - INFO - User registered: sai
+2025-03-13 23:29:40,655 - INFO - 127.0.0.1 - - [13/Mar/2025 23:29:40] "[35m[1mPOST /api/register HTTP/1.1[0m" 201 -
+2025-03-13 23:29:40,760 - ERROR - Error fetching timetables: column "is_deleted" does not exist
+LINE 3:                 WHERE created_by = 9 AND NOT is_deleted
+                                                     ^
+
+2025-03-13 23:29:40,762 - INFO - 127.0.0.1 - - [13/Mar/2025 23:29:40] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 23:31:33,028 - INFO - Subjects added for user 9
+2025-03-13 23:31:33,029 - INFO - 127.0.0.1 - - [13/Mar/2025 23:31:33] "[35m[1mPOST /api/subjects HTTP/1.1[0m" 201 -
+2025-03-13 23:31:35,299 - INFO - Timetable 7 created by user 9
+2025-03-13 23:31:35,300 - INFO - 127.0.0.1 - - [13/Mar/2025 23:31:35] "[35m[1mPOST /api/timetables HTTP/1.1[0m" 201 -
+2025-03-13 23:31:35,700 - ERROR - Error fetching timetables: column "is_deleted" does not exist
+LINE 3:                 WHERE created_by = 9 AND NOT is_deleted
+                                                     ^
+
+2025-03-13 23:31:35,702 - INFO - 127.0.0.1 - - [13/Mar/2025 23:31:35] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 23:32:14,482 - INFO - User logged in: sai
+2025-03-13 23:32:14,483 - INFO - 127.0.0.1 - - [13/Mar/2025 23:32:14] "POST /api/login HTTP/1.1" 200 -
+2025-03-13 23:32:14,878 - ERROR - Error fetching timetables: column "is_deleted" does not exist
+LINE 3:                 WHERE created_by = 9 AND NOT is_deleted
+                                                     ^
+
+2025-03-13 23:32:14,881 - INFO - 127.0.0.1 - - [13/Mar/2025 23:32:14] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 23:32:29,669 - WARNING - Invalid registration data: {'username': 'nani', 'password': '123456', 'role': 'student'}
+2025-03-13 23:32:29,670 - INFO - 127.0.0.1 - - [13/Mar/2025 23:32:29] "[31m[1mPOST /api/register HTTP/1.1[0m" 400 -
+2025-03-13 23:32:39,885 - WARNING - Invalid registration data: {'username': 'nani', 'password': '123456', 'role': 'student'}
+2025-03-13 23:32:39,886 - INFO - 127.0.0.1 - - [13/Mar/2025 23:32:39] "[31m[1mPOST /api/register HTTP/1.1[0m" 400 -
+2025-03-13 23:33:07,313 - INFO - Application running on http://0.0.0.0:5000
+2025-03-13 23:33:07,410 - INFO - Application running on http://0.0.0.0:5000
+2025-03-13 23:33:34,212 - INFO - Starting Flask application...
+2025-03-13 23:33:34,374 - INFO - Database tables created or verified
+2025-03-13 23:33:35,121 - INFO - Default users initialized
+2025-03-13 23:33:36,064 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.65.96:5000
+2025-03-13 23:33:36,064 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-13 23:33:36,067 - INFO -  * Restarting with stat
+2025-03-13 23:33:36,847 - INFO - Starting Flask application...
+2025-03-13 23:33:36,925 - INFO - Database tables created or verified
+2025-03-13 23:33:37,672 - INFO - Default users initialized
+2025-03-13 23:33:37,710 - WARNING -  * Debugger is active!
+2025-03-13 23:33:37,717 - INFO -  * Debugger PIN: 143-078-679
+2025-03-13 23:33:40,660 - INFO - 127.0.0.1 - - [13/Mar/2025 23:33:40] "GET / HTTP/1.1" 200 -
+2025-03-13 23:33:47,777 - INFO - User logged in: sai
+2025-03-13 23:33:47,778 - INFO - 127.0.0.1 - - [13/Mar/2025 23:33:47] "POST /api/login HTTP/1.1" 200 -
+2025-03-13 23:33:47,892 - ERROR - Error fetching timetables: column "is_deleted" does not exist
+LINE 3:                 WHERE created_by = 9 AND NOT is_deleted
+                                                     ^
+
+2025-03-13 23:33:47,894 - INFO - 127.0.0.1 - - [13/Mar/2025 23:33:47] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 23:33:49,575 - INFO - Timetable 8 created by user 9
+2025-03-13 23:33:49,577 - INFO - 127.0.0.1 - - [13/Mar/2025 23:33:49] "[35m[1mPOST /api/timetables HTTP/1.1[0m" 201 -
+2025-03-13 23:33:49,765 - ERROR - Error fetching timetables: column "is_deleted" does not exist
+LINE 3:                 WHERE created_by = 9 AND NOT is_deleted
+                                                     ^
+
+2025-03-13 23:33:49,767 - INFO - 127.0.0.1 - - [13/Mar/2025 23:33:49] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 23:34:13,904 - WARNING - Username already exists: sai
+2025-03-13 23:34:13,904 - INFO - 127.0.0.1 - - [13/Mar/2025 23:34:13] "[31m[1mPOST /api/register HTTP/1.1[0m" 400 -
+2025-03-13 23:34:22,441 - INFO - User registered: sai garu
+2025-03-13 23:34:22,443 - INFO - 127.0.0.1 - - [13/Mar/2025 23:34:22] "[35m[1mPOST /api/register HTTP/1.1[0m" 201 -
+2025-03-13 23:34:22,548 - ERROR - Error fetching timetables: column "is_deleted" does not exist
+LINE 3:                 WHERE created_by = 10 AND NOT is_deleted
+                                                      ^
+
+2025-03-13 23:34:22,550 - INFO - 127.0.0.1 - - [13/Mar/2025 23:34:22] "GET /api/timetables HTTP/1.1" 200 -
+2025-03-13 23:34:28,983 - WARNING - No subjects found for user 10
+2025-03-13 23:34:28,984 - INFO - 127.0.0.1 - - [13/Mar/2025 23:34:28] "[31m[1mPOST /api/timetables HTTP/1.1[0m" 400 -
+2025-03-13 23:34:43,692 - INFO - Subjects added for user 10
+2025-03-13 23:34:43,693 - INFO - 127.0.0.1 - - [13/Mar/2025 23:34:43] "[35m[1mPOST /api/subjects HTTP/1.1[0m" 201 -
+2025-03-13 23:34:45,681 - INFO - Timetable 9 created by user 10
+2025-03-13 23:34:45,682 - INFO - 127.0.0.1 - - [13/Mar/2025 23:34:45] "[35m[1mPOST /api/timetables HTTP/1.1[0m" 201 -
+2025-03-13 23:34:46,104 - ERROR - Error fetching timetables: column "is_deleted" does not exist
+LINE 3:                 WHERE created_by = 10 AND NOT is_deleted
+                                                      ^
+
+2025-03-13 23:34:46,106 - INFO - 127.0.0.1 - - [13/Mar/2025 23:34:46] "GET /api/timetables HTTP/1.1" 200 -

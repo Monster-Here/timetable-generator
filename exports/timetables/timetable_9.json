@@ -1,0 +1,187 @@
+{
+  "Monday": {
+    "9:00": {
+      "subject": "hhh",
+      "teacher": "mnn",
+      "room": "-"
+    },
+    "10:00": {
+      "subject": "h",
+      "teacher": "nj",
+      "room": "-"
+    },
+    "11:00": {
+      "subject": "hhh",
+      "teacher": "mnn",
+      "room": "-"
+    },
+    "12:00": {
+      "subject": "h",
+      "teacher": "nj",
+      "room": "-"
+    },
+    "14:00": {
+      "subject": "Free",
+      "teacher": "-",
+      "room": "-"
+    },
+    "15:00": {
+      "subject": "Free",
+      "teacher": "-",
+      "room": "-"
+    },
+    "16:00": {
+      "subject": "Free",
+      "teacher": "-",
+      "room": "-"
+    }
+  },
+  "Tuesday": {
+    "9:00": {
+      "subject": "hhh",
+      "teacher": "mnn",
+      "room": "-"
+    },
+    "10:00": {
+      "subject": "h",
+      "teacher": "nj",
+      "room": "-"
+    },
+    "11:00": {
+      "subject": "hhh",
+      "teacher": "mnn",
+      "room": "-"
+    },
+    "12:00": {
+      "subject": "h",
+      "teacher": "nj",
+      "room": "-"
+    },
+    "14:00": {
+      "subject": "Free",
+      "teacher": "-",
+      "room": "-"
+    },
+    "15:00": {
+      "subject": "Free",
+      "teacher": "-",
+      "room": "-"
+    },
+    "16:00": {
+      "subject": "Free",
+      "teacher": "-",
+      "room": "-"
+    }
+  },
+  "Wednesday": {
+    "9:00": {
+      "subject": "hhh",
+      "teacher": "mnn",
+      "room": "-"
+    },
+    "10:00": {
+      "subject": "h",
+      "teacher": "nj",
+      "room": "-"
+    },
+    "11:00": {
+      "subject": "hhh",
+      "teacher": "mnn",
+      "room": "-"
+    },
+    "12:00": {
+      "subject": "h",
+      "teacher": "nj",
+      "room": "-"
+    },
+    "14:00": {
+      "subject": "Free",
+      "teacher": "-",
+      "room": "-"
+    },
+    "15:00": {
+      "subject": "Free",
+      "teacher": "-",
+      "room": "-"
+    },
+    "16:00": {
+      "subject": "Free",
+      "teacher": "-",
+      "room": "-"
+    }
+  },
+  "Thursday": {
+    "9:00": {
+      "subject": "hhh",
+      "teacher": "mnn",
+      "room": "-"
+    },
+    "10:00": {
+      "subject": "h",
+      "teacher": "nj",
+      "room": "-"
+    },
+    "11:00": {
+      "subject": "hhh",
+      "teacher": "mnn",
+      "room": "-"
+    },
+    "12:00": {
+      "subject": "h",
+      "teacher": "nj",
+      "room": "-"
+    },
+    "14:00": {
+      "subject": "Free",
+      "teacher": "-",
+      "room": "-"
+    },
+    "15:00": {
+      "subject": "Free",
+      "teacher": "-",
+      "room": "-"
+    },
+    "16:00": {
+      "subject": "Free",
+      "teacher": "-",
+      "room": "-"
+    }
+  },
+  "Friday": {
+    "9:00": {
+      "subject": "h",
+      "teacher": "nj",
+      "room": "-"
+    },
+    "10:00": {
+      "subject": "hhh",
+      "teacher": "mnn",
+      "room": "-"
+    },
+    "11:00": {
+      "subject": "h",
+      "teacher": "nj",
+      "room": "-"
+    },
+    "12:00": {
+      "subject": "hhh",
+      "teacher": "mnn",
+      "room": "-"
+    },
+    "14:00": {
+      "subject": "Free",
+      "teacher": "-",
+      "room": "-"
+    },
+    "15:00": {
+      "subject": "Free",
+      "teacher": "-",
+      "room": "-"
+    },
+    "16:00": {
+      "subject": "Free",
+      "teacher": "-",
+      "room": "-"
+    }
+  }
+}

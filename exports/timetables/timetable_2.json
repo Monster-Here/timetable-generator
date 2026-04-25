@@ -1,0 +1,187 @@
+{
+  "Monday": {
+    "9:00": {
+      "subject": "Chemistry",
+      "teacher": "Mr. White",
+      "room": "Room B"
+    },
+    "10:00": {
+      "subject": "Physics",
+      "teacher": "Mrs. Johnson",
+      "room": "Room B"
+    },
+    "11:00": {
+      "subject": "History",
+      "teacher": "Mr. Davis",
+      "room": "Room C"
+    },
+    "12:00": {
+      "subject": "Math",
+      "teacher": "Mr. Smith",
+      "room": "Room A"
+    },
+    "14:00": {
+      "subject": "Chemistry",
+      "teacher": "Mr. White",
+      "room": "Room B"
+    },
+    "15:00": {
+      "subject": "History",
+      "teacher": "Mr. Davis",
+      "room": "Room C"
+    },
+    "16:00": {
+      "subject": "Physics",
+      "teacher": "Mrs. Johnson",
+      "room": "Room B"
+    }
+  },
+  "Tuesday": {
+    "9:00": {
+      "subject": "History",
+      "teacher": "Mr. Davis",
+      "room": "Room C"
+    },
+    "10:00": {
+      "subject": "Chemistry",
+      "teacher": "Mr. White",
+      "room": "Room B"
+    },
+    "11:00": {
+      "subject": "Math",
+      "teacher": "Mr. Smith",
+      "room": "Room A"
+    },
+    "12:00": {
+      "subject": "Chemistry",
+      "teacher": "Mr. White",
+      "room": "Room B"
+    },
+    "14:00": {
+      "subject": "History",
+      "teacher": "Mr. Davis",
+      "room": "Room C"
+    },
+    "15:00": {
+      "subject": "Physics",
+      "teacher": "Mrs. Johnson",
+      "room": "Room B"
+    },
+    "16:00": {
+      "subject": "English",
+      "teacher": "Ms. Brown",
+      "room": "Room A"
+    }
+  },
+  "Wednesday": {
+    "9:00": {
+      "subject": "Chemistry",
+      "teacher": "Mr. White",
+      "room": "Room B"
+    },
+    "10:00": {
+      "subject": "History",
+      "teacher": "Mr. Davis",
+      "room": "Room C"
+    },
+    "11:00": {
+      "subject": "Math",
+      "teacher": "Mr. Smith",
+      "room": "Room A"
+    },
+    "12:00": {
+      "subject": "English",
+      "teacher": "Ms. Brown",
+      "room": "Room A"
+    },
+    "14:00": {
+      "subject": "History",
+      "teacher": "Mr. Davis",
+      "room": "Room C"
+    },
+    "15:00": {
+      "subject": "Chemistry",
+      "teacher": "Mr. White",
+      "room": "Room B"
+    },
+    "16:00": {
+      "subject": "Math",
+      "teacher": "Mr. Smith",
+      "room": "Room A"
+    }
+  },
+  "Thursday": {
+    "9:00": {
+      "subject": "Physics",
+      "teacher": "Mrs. Johnson",
+      "room": "Room B"
+    },
+    "10:00": {
+      "subject": "History",
+      "teacher": "Mr. Davis",
+      "room": "Room C"
+    },
+    "11:00": {
+      "subject": "Physics",
+      "teacher": "Mrs. Johnson",
+      "room": "Room B"
+    },
+    "12:00": {
+      "subject": "Chemistry",
+      "teacher": "Mr. White",
+      "room": "Room B"
+    },
+    "14:00": {
+      "subject": "History",
+      "teacher": "Mr. Davis",
+      "room": "Room C"
+    },
+    "15:00": {
+      "subject": "English",
+      "teacher": "Ms. Brown",
+      "room": "Room A"
+    },
+    "16:00": {
+      "subject": "Chemistry",
+      "teacher": "Mr. White",
+      "room": "Room B"
+    }
+  },
+  "Friday": {
+    "9:00": {
+      "subject": "History",
+      "teacher": "Mr. Davis",
+      "room": "Room C"
+    },
+    "10:00": {
+      "subject": "Math",
+      "teacher": "Mr. Smith",
+      "room": "Room A"
+    },
+    "11:00": {
+      "subject": "Chemistry",
+      "teacher": "Mr. White",
+      "room": "Room B"
+    },
+    "12:00": {
+      "subject": "History",
+      "teacher": "Mr. Davis",
+      "room": "Room C"
+    },
+    "14:00": {
+      "subject": "English",
+      "teacher": "Ms. Brown",
+      "room": "Room A"
+    },
+    "15:00": {
+      "subject": "Chemistry",
+      "teacher": "Mr. White",
+      "room": "Room B"
+    },
+    "16:00": {
+      "subject": "Math",
+      "teacher": "Mr. Smith",
+      "room": "Room A"
+    }
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "Monday": {
+    "9:00": {
+      "subject": "science",
+      "teacher": "praveen",
+      "room": "Room A"
+    },
+    "10:00": {
+      "subject": "telugu",
+      "teacher": "teja",
+      "room": "Room C"
+    },
+    "11:00": {
+      "subject": "mathes",
+      "teacher": "sai",
+      "room": "Room A"
+    },
+    "12:00": {
+      "subject": "science",
+      "teacher": "praveen",
+      "room": "Room A"
+    },
+    "14:00": {
+      "subject": "nsm",
+      "teacher": "banu",
+      "room": "Room B"
+    },
+    "15:00": {
+      "subject": "english",
+      "teacher": "deepthi",
+      "room": "Room V"
+    },
+    "16:00": {
+      "subject": "mathes",
+      "teacher": "sai",
+      "room": "Room A"
+    }
+  },
+  "Tuesday": {
+    "9:00": {
+      "subject": "nsm",
+      "teacher": "banu",
+      "room": "Room B"
+    },
+    "10:00": {
+      "subject": "mathes",
+      "teacher": "sai",
+      "room": "Room A"
+    },
+    "11:00": {
+      "subject": "nsm",
+      "teacher": "banu",
+      "room": "Room B"
+    },
+    "12:00": {
+      "subject": "telugu",
+      "teacher": "teja",
+      "room": "Room C"
+    },
+    "14:00": {
+      "subject": "english",
+      "teacher": "deepthi",
+      "room": "Room V"
+    },
+    "15:00": {
+      "subject": "mathes",
+      "teacher": "sai",
+      "room": "Room A"
+    },
+    "16:00": {
+      "subject": "telugu",
+      "teacher": "teja",
+      "room": "Room C"
+    }
+  },
+  "Wednesday": {
+    "9:00": {
+      "subject": "telugu",
+      "teacher": "teja",
+      "room": "Room C"
+    },
+    "10:00": {
+      "subject": "english",
+      "teacher": "deepthi",
+      "room": "Room V"
+    },
+    "11:00": {
+      "subject": "mathes",
+      "teacher": "sai",
+      "room": "Room A"
+    },
+    "12:00": {
+      "subject": "telugu",
+      "teacher": "teja",
+      "room": "Room C"
+    },
+    "14:00": {
+      "subject": "english",
+      "teacher": "deepthi",
+      "room": "Room V"
+    },
+    "15:00": {
+      "subject": "mathes",
+      "teacher": "sai",
+      "room": "Room A"
+    },
+    "16:00": {
+      "subject": "nsm",
+      "teacher": "banu",
+      "room": "Room B"
+    }
+  },
+  "Thursday": {
+    "9:00": {
+      "subject": "science",
+      "teacher": "praveen",
+      "room": "Room A"
+    },
+    "10:00": {
+      "subject": "mathes",
+      "teacher": "sai",
+      "room": "Room A"
+    },
+    "11:00": {
+      "subject": "telugu",
+      "teacher": "teja",
+      "room": "Room C"
+    },
+    "12:00": {
+      "subject": "science",
+      "teacher": "praveen",
+      "room": "Room A"
+    },
+    "14:00": {
+      "subject": "nsm",
+      "teacher": "banu",
+      "room": "Room B"
+    },
+    "15:00": {
+      "subject": "telugu",
+      "teacher": "teja",
+      "room": "Room C"
+    },
+    "16:00": {
+      "subject": "english",
+      "teacher": "deepthi",
+      "room": "Room V"
+    }
+  },
+  "Friday": {
+    "9:00": {
+      "subject": "telugu",
+      "teacher": "teja",
+      "room": "Room C"
+    },
+    "10:00": {
+      "subject": "nsm",
+      "teacher": "banu",
+      "room": "Room B"
+    },
+    "11:00": {
+      "subject": "science",
+      "teacher": "praveen",
+      "room": "Room A"
+    },
+    "12:00": {
+      "subject": "telugu",
+      "teacher": "teja",
+      "room": "Room C"
+    },
+    "14:00": {
+      "subject": "english",
+      "teacher": "deepthi",
+      "room": "Room V"
+    },
+    "15:00": {
+      "subject": "science",
+      "teacher": "praveen",
+      "room": "Room A"
+    },
+    "16:00": {
+      "subject": "mathes",
+      "teacher": "sai",
+      "room": "Room A"
+    }
+  }
+}
