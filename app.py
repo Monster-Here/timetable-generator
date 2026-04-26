@@ -321,6 +321,8 @@ def serve_favicon():
     except:
         return '', 204
 
+# Initialize DB on startup (works with gunicorn too)
+init_db()
+
 if __name__ == '__main__':
-    init_db()
     app.run(debug=False, host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
