@@ -271,7 +271,8 @@
     </div>
 
     <script>
-        const API_BASE_URL = 'http://localhost:5000/api';
+        // ✅ FIXED: Use relative URL so it works on any domain (localhost or Render)
+        const API_BASE_URL = '/api';
         let token = localStorage.getItem('token');
         let user = JSON.parse(localStorage.getItem('user')) || null;
         let isLogin = true;
@@ -468,9 +469,9 @@
                 const response = await apiRequest('/subjects', 'POST', { subjects });
                 showMessage(subjectsMessage, response.message);
                 subjectForm.classList.remove('active');
-                subjectsContainer.innerHTML = ''; // Clear form
+                subjectsContainer.innerHTML = '';
                 subjectRowCount = 0;
-                addSubjectRow(); // Add one empty row back
+                addSubjectRow();
             } catch (error) {
                 showMessage(subjectsMessage, error.message, true);
             }
@@ -532,14 +533,14 @@
             try {
                 const response = await apiRequest(`/timetables/${id}`, 'DELETE');
                 showMessage(dashboardMessage, response.message);
-                loadTimetables(); // Refresh the list
+                loadTimetables();
             } catch (error) {
                 showMessage(dashboardMessage, error.message, true);
             }
         }
 
         // Initialize
-        addSubjectRow(); // Add initial subject row
+        addSubjectRow();
         if (token && user) {
             apiRequest('/timetables')
                 .then(() => {
