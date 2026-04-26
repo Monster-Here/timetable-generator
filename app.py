@@ -31,10 +31,9 @@ bcrypt = Bcrypt(app)
 
 def get_db_connection():
     try:
-        if DATABASE_URL:
-            conn = psycopg2.connect(DATABASE_URL, sslmode='require')
-        else:
-            conn = psycopg2.connect(host='localhost', database='postgres', user='postgres', password='1616')
+        if not DATABASE_URL:
+            raise Exception("DATABASE_URL environment variable is not set!")
+        conn = psycopg2.connect(DATABASE_URL, sslmode='require')
         return conn
     except psycopg2.Error as e:
         logger.error(f"Database connection failed: {e}")
